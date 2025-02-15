@@ -1,0 +1,189 @@
+<html lang="en">
+    <head>
+     <meta charset="utf-8"/>
+     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+     <title>
+      Real Estate Developer
+     </title>
+     <script src="https://cdn.tailwindcss.com">
+     </script>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('exploreButton').addEventListener('click', function() {
+          alert('Explore Now button clicked!');
+        });
+   
+        document.querySelectorAll('.learnMoreButton').forEach(function(button) {
+          button.addEventListener('click', function() {
+            alert('Learn More button clicked!');
+          });
+        });
+   
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          alert('Message sent!');
+        });
+      });
+     </script>
+    </head>
+    <body class="font-roboto">
+     <!-- Navbar -->
+     <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+       <a class="text-white text-2xl font-bold" href="#">
+        AkyeaEstates
+       </a>
+       <div class="space-x-4">
+        <a class="text-gray-300 hover:text-white" href="#">
+         Home
+        </a>
+        <a class="text-gray-300 hover:text-white" href="#">
+         About
+        </a>
+        <a class="text-gray-300 hover:text-white" href="#">
+         Properties
+        </a>
+        <a class="text-gray-300 hover:text-white" href="#">
+         Contact
+        </a>
+       </div>
+      </div>
+     </nav>
+     <!-- Hero Section -->
+     <section class="relative">
+      <img alt="Aerial view of a modern city with skyscrapers and green spaces" class="w-full h-96 object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/YKow5evD6ZUIPC1cthwS11fjSK1vMe6RCB7OgF8Y4aYUXKtnA.jpg" width="1920"/>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+       <div class="text-center text-white">
+        <h1 class="text-4xl font-bold">
+         Find the home of your dreams
+        </h1>
+        <p class="mt-4 text-lg">
+         Discover the best properties in the city
+        </p>
+        <a class="mt-6 inline-block bg-blue-500 text-white py-2 px-4 rounded" href="#" id="exploreButton">
+         Explore Now
+        </a>
+       </div>
+      </div>
+     </section>
+     <!-- About Section -->
+     <section class="py-12 bg-gray-100">
+      <div class="container mx-auto text-center">
+       <h2 class="text-3xl font-bold">
+        About Us
+       </h2>
+       <p class="mt-4 text-gray-600">
+        We are a leading real estate developer with over 20 years of experience in building high-quality residential and commercial properties.
+       </p>
+      </div>
+     </section>
+     <!-- Properties Section -->
+     <section class="py-12">
+      <div class="container mx-auto">
+       <h2 class="text-3xl font-bold text-center">
+        Our Properties
+       </h2>
+       <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Property 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+         <img alt="Modern apartment building with large windows and balconies" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/5AdnQsA1fgWzDCWtDHHkdFc469vfg0QiI3iLcQeJRTBbXKtnA.jpg" width="400"/>
+         <div class="p-4">
+          <h3 class="text-xl font-bold">
+           Luxury Apartments
+          </h3>
+          <p class="mt-2 text-gray-600">
+           Located in the heart of the city, these apartments offer stunning views and modern amenities.
+          </p>
+          <a class="mt-4 inline-block text-blue-500 learnMoreButton" href="#">
+           Learn More
+          </a>
+         </div>
+        </div>
+        <!-- Property 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+         <img alt="Spacious suburban house with a large front yard" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/ljmJxvzwFuIeXyqG52jvbwTi5ehrpiiKtXLG0vUnwItsLl2TA.jpg" width="400"/>
+         <div class="p-4">
+          <h3 class="text-xl font-bold">
+           Family Homes
+          </h3>
+          <p class="mt-2 text-gray-600">
+           Perfect for families, these homes are located in safe neighborhoods with excellent schools.
+          </p>
+          <a class="mt-4 inline-block text-blue-500 learnMoreButton" href="#">
+           Learn More
+          </a>
+         </div>
+        </div>
+        <!-- Property 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+         <img alt="Modern office building with glass facade" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/1Dbwtl047Q7eSapennhK7IuFZMtUk6sOK6H9cYBTqE8vLl2TA.jpg" width="400"/>
+         <div class="p-4">
+          <h3 class="text-xl font-bold">
+           Commercial Spaces
+          </h3>
+          <p class="mt-2 text-gray-600">
+           Our commercial properties are designed to meet the needs of businesses of all sizes.
+          </p>
+          <a class="mt-4 inline-block text-blue-500 learnMoreButton" href="#">
+           Learn More
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+     <!-- Contact Section -->
+     <section class="py-12 bg-gray-100">
+      <div class="container mx-auto text-center">
+       <h2 class="text-3xl font-bold">
+        Contact Us
+       </h2>
+       <p class="mt-4 text-gray-600">
+        Have questions? Get in touch with us today!
+       </p>
+       <form class="mt-8 max-w-lg mx-auto" id="contactForm">
+        <div class="mb-4">
+         <input class="w-full p-3 border border-gray-300 rounded" placeholder="Your Name" type="text"/>
+        </div>
+        <div class="mb-4">
+         <input class="w-full p-3 border border-gray-300 rounded" placeholder="Your Email" type="email"/>
+        </div>
+        <div class="mb-4">
+         <textarea class="w-full p-3 border border-gray-300 rounded h-32" placeholder="Your Message"></textarea>
+        </div>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded" type="submit">
+         Send Message
+        </button>
+       </form>
+      </div>
+     </section>
+     <!-- Footer -->
+     <footer class="bg-gray-800 py-6">
+      <div class="container mx-auto text-center text-gray-400">
+       <p>
+        © 2023 RealEstateCo. All rights reserved.
+       </p>
+       <div class="mt-4 space-x-4">
+        <a class="text-gray-400 hover:text-white" href="#">
+         <i class="fab fa-facebook-f">
+         </i>
+        </a>
+        <a class="text-gray-400 hover:text-white" href="#">
+         <i class="fab fa-twitter">
+         </i>
+        </a>
+        <a class="text-gray-400 hover:text-white" href="#">
+         <i class="fab fa-instagram">
+         </i>
+        </a>
+        <a class="text-gray-400 hover:text-white" href="#">
+         <i class="fab fa-linkedin-in">
+         </i>
+        </a>
+       </div>
+      </div>
+     </footer>
+    </body>
+   </html>
